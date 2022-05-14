@@ -84,28 +84,46 @@ img {
 }
 
 header {
-  text-align: center;
   box-shadow: 1px 3px 2px 0px rgba(0, 0, 0, 0.39);
-  padding: 20px 0 13px;
+  padding: 10px 0 4px;
 }
 
-nav {
-  width: 100%;
+.navtoggle li:not(:last-child) {
+  display: none;
 }
 
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: -10px;
+  font-size: 20px;
+}
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgb(255, 255, 255);
+}
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
+}
 nav > ul {
   list-style-type: none;
-  padding: 0px 10px 20px;
-}
-
-nav > ul > li {
-  display: inline-block;
+  padding: 12px 50px 20px 5px;
+  margin: 0;
 }
 
 nav > ul > li > a, 
   a:visited, a:hover, a:active {
   padding: 20px 15px;
-  text-transform: uppercase;
+  text-transform: upercase;
   font-weight: 700;
   color: #4a4a4a;
 }
@@ -117,7 +135,6 @@ nav > ul > li > a,
 }
 main {
   text-align: center;
-  padding: 20px 0px -20px;
   margin: center;
   position: center;
 }
@@ -127,9 +144,7 @@ ul {
   list-style-type: none;
   padding: 0px;
 }
-ul > li {
-  display: inline-block;
-}
+
  ul > li > a {
   padding: 0 15px;
 }
@@ -412,15 +427,26 @@ button:-moz-focusring,
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 641px) {
   header {
     text-align: unset;
-    padding: 20px 0 13px;
+    padding: 5px 0 0px 0px;
   }
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
   nav {
     width: auto;
     float: right;
     margin-top: -20px;
+  }
+  nav > ul {
+    margin: 1em 0;
+  }
+
+  nav > ul > li {
+    display: inline-block;
   }
    
   #hero span {
@@ -459,9 +485,8 @@ Medium devices (640px and larger)
     display: table;
   }
 
-#logo { width: 100px;
+#logo { width: 30px;
   display: inline-block;
-  position: center;
 }
 
 /* ==============================
@@ -511,7 +536,6 @@ body {
 
 #logo { width: 900px;
   display: inline-block;
-  position: center;
 }
 
 /* ==============================
