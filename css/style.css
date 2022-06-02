@@ -448,6 +448,14 @@ Medium devices (640px and larger)
   nav > ul > li {
     display: inline-block;
   }
+ 
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
+  }
    
   #hero span {
     display: block;
