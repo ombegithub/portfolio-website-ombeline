@@ -315,11 +315,11 @@ sup {
 }
 
 a {
-  color: #DB3B00;
+  color: #994c30;
   text-decoration: none; /* No underlining */
 }
 a:hover {
-  color: #DB3B00;
+  color: #994c30;
   text-decoration: underline; /* Underlining when hovering over a link */
 }
 a:visited { /* visited link */
