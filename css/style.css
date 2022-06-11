@@ -42,7 +42,7 @@ Fourth Color (light grey): #E6E6E6;
 .row {
   margin: 25px 0; /* 25px top and bottom, 0 left and right */
 }
-#work .row { padding-bottom: 25px; border-bottom: 1px solid #4a4a4a; }
+.work .row { padding-bottom: 25px; border-bottom: 1px solid #4a4a4a; }
 
 body {
   background-color: #ffffff;
@@ -323,7 +323,7 @@ a:hover {
   text-decoration: underline; /* Underlining when hovering over a link */
 }
 a:visited { /* visited link */
-  color: #ffffff;
+  color: #4a4a4a;
 }
 a:active { /* selected link */
   color: #994c30;
@@ -331,7 +331,7 @@ a:active { /* selected link */
 a:hover,
 a:focus {
   color: #994c30;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .button {
@@ -348,6 +348,10 @@ a:focus {
 .button:hover {
   opacity: 0.8; /* Reduces the opacity of the button to 80% */
   text-decoration: none;
+  color: #ffffff; /* needed to override the default link color */
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 3px;
 }
 
 .button.contact {
